@@ -1,0 +1,13 @@
+{
+  "name": "Shell_Assignment",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "cypress": "*",
+    "cypress-if": "^1.12.0",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "typescript": "*"
+  }
+}
