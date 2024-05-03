@@ -1,35 +1,35 @@
-import * as apiData from '../../../fixtures/registration_api_body.json'
+import * as apiData from "../../../fixtures/registrationUsersBody.json";
+import * as createUserData from "../../../fixtures/createUsersBody.json";
 
-describe('API Tests', () => {
-    const baseUrl = 'https://reqres.in/api/register';
+describe("API Tests", () => {
+  const baseUrl = "https://reqres.in/api";
 
-    it('Verify successful registration process', () => {
-        cy.request('POST', baseUrl, apiData).then((response: Response) => {
-            expect(response.status).to.eq(200);
-            // @ts-ignore
-            expect(response.body.id).to.be.greaterThan(1).lessThan(10);
-            // @ts-ignore
-            expect(response.body.token).to.match(/^[a-zA-Z0-9]+$/);
-        })
-    })
+  it("Verify successful users creation", () => {
+    cy.request({
+      method: "POST",
+      url: `${baseUrl}/users`,
+      body: createUserData,
+    }).then((response) => {
+      expect(response.status).to.equal(201);
+      expect(response.body.name).to.equal(createUserData.name);
+      expect(response.body.job).to.equal(createUserData.job);
+    });
+  });
 
-    it('Verify incorrect email results in unsuccessful registration', () => {
-        const modifiedData = JSON.parse(JSON.stringify(apiData));
-        modifiedData.email = 'abcd';
+  it("Verify incorrect email results in unsuccessful registration", () => {
+    const modifiedData = JSON.parse(JSON.stringify(apiData));
+    modifiedData.email = "abcd";
 
-            cy.request({
-                method: 'POST',
-                url: baseUrl,
-                body: modifiedData,
-                failOnStatusCode: false
-            }).then((response: Response) => {
-                expect(response.status).to.eq(400);
-                // @ts-ignore
-                expect(response.body.error).to.eq('Note: Only defined users succeed registration');
-            });
-        });
-    // });
-})
-
-
-
+    cy.request({
+      method: "POST",
+      url: `${baseUrl}/register`,
+      body: modifiedData,
+      failOnStatusCode: false,
+    }).then((response) => {
+      expect(response.status).to.eq(400);
+      expect(response.body.error).to.eq(
+        "Note: Only defined users succeed registration"
+      );
+    });
+  });
+});

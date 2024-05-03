@@ -1,9 +1,16 @@
-import {defineConfig} from 'cypress'
+// import {defineConfig} from 'cypress'
+const { defineConfig } = require('cypress');
 
-export default defineConfig({
+module.exports =  defineConfig({
+  projectId: 'djhf7x',
 
     "defaultCommandTimeout": 80000,
     "pageLoadTimeout": 100000,
+    "waitForAnimations": true,
+    "animationDistanceThreshold": 50,
+    "screenshotOnRunFailure": true,
+    "video": false,
+    "chromeWebSecurity": false,
     "reporter": "mochawesome",
     "reporterOptions": {
         "reportDir": "cypress/results",

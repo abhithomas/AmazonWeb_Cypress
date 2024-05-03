@@ -1,4 +1,5 @@
 import {LoginPage} from '../e2e/src/pages/Login_Page'
+// @ts-ignore
 import {Request} from "cypress/types/net-stubbing";
 
 Cypress.Commands.add('loginWithSession', (email: string, password: string) => {

@@ -6,3 +6,8 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/cypress/screenshots/
+/cypress/videos/
+/cypress/results/
+/node_modules
+
