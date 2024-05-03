@@ -77,7 +77,7 @@ const navigate = {
 
 type HomePagePom = Pom<typeof elements, typeof actions, typeof navigate>
 
-export const homePage: HomePagePom = {
+export const productPage: HomePagePom = {
     elements,
     actions,
     navigate,
