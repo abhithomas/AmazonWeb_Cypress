@@ -8,12 +8,13 @@ Here is a brief overview for the framework made in Cypress:
 **1.** **cypress:** This is the main folder containing all the Cypress-related files and directories.
    **e2e/src:** This directory contains the source files for end-to-end (e2e) tests.
      **pages:** This directory contains page object model (POM) files, which represent different pages of the web application under test.
+
         **Cart_Page.ts:** Represents the cart page.
         **CheckoutPage.ts:** Represents the checkout page.
         **Home_Page.ts:** Represents the home page.
         **Login_Page.ts:** Represents the login page.
         **pom.interface.ts:** Interface for defining page objects.
-
+        
    ** specs:** This directory contains test specification files.
         **APITests.ts:** Contains tests related to API testing.
         **AddProduct_Checkout.ts:** Contains tests related to adding products to the cart and checkout process.
