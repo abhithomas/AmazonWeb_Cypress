@@ -35,6 +35,7 @@ Here is a brief overview for the framework made in Cypress:
 
 **6.** **tsconfig.json:** This file contains TypeScript compiler options and project settings.
 
+**Command to run over CLI: - browserstack-cypress run**
 
 The project is set up for end-to-end testing using Cypress, with separate folders for page objects, test specifications, fixtures, and support files. Additionally, there are configuration files for Cypress, npm, and TypeScript.
 
