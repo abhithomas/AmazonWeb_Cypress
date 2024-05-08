@@ -30,6 +30,12 @@
             "mochawesome-merge": "^4.3.0",
             "typescript": "4.6.3"
     },
+	 "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
     "package_config_options": {}
 },
     "disable_usage_reporting": false
