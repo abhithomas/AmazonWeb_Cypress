@@ -2,6 +2,7 @@
   "name": "Shell_Assignment",
   "version": "1.0.0",
   "devDependencies": {
+    "browserstack-cypress-cli": "1.30.0",
     "@types/mocha": "^10.0.6",
     "cypress": "13.6.4",
     "cypress-if": "^1.12.0",
