@@ -1,4 +1,0 @@
-# Ignore Cypress reports
-/cypress/screenshots/
-/cypress/videos/
-/cypress/results/
