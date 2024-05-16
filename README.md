@@ -1,6 +1,6 @@
-# Shell_Assignment_Cypress
+# Amazon Web UI Automation using Cypress
 
-This Assignments consists of UI cases of searching product from amazon, adding , verifying and checkout process
+This repo consists of UI cases of searching product from amazon, adding , verifying and checkout process
 and API cases of URL - 'https://reqres.in/api/register'
 
 Here is a brief overview for the framework made in Cypress:
